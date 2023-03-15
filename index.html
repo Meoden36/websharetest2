@@ -14,6 +14,8 @@
           const blob = await response.blob();
           const file = new File([blob], 'image.jpg', { type: 'image/jpeg' });
           const shareData = {
+            title: "My Website",
+					  url: "https://example.com",
             files: [file],
             text: 'Check out this cool image!',
           };
